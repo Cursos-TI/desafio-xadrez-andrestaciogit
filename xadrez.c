@@ -24,11 +24,24 @@ int main(){
     
     printf("Movimentação da Rainha\n");
     
-    for (int movimentoRainha = 1; movimentoRainha <=8; movimentoRainha++)
+    for (int movimentoRainha = 1; movimentoRainha <= 8; movimentoRainha++)
     {
         printf("Movimento %d: Rainha vai para a esquerda\n", movimentoRainha);
     }
-    
-    return 0;
 
+    printf("Movimentação do Cavalo\n");
+
+    for (int movimentoCavalo = 1; movimentoCavalo <= 2; movimentoCavalo++) {
+        printf("Movimento %d: Cavalo vai para baixo\n", movimentoCavalo);
+        
+        if (movimentoCavalo == 2) {
+            int movimentoCavalo2 = 0;
+            while (movimentoCavalo2 <= 1) {
+                printf("Movimento 3: Cavalo vai para esquerda\n", movimentoCavalo2++);
+                movimentoCavalo2++;
+            }
+        }
+    }
+
+    return 0;
 }
